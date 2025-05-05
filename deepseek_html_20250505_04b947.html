@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement Automatisé de TVA - IA Fiscal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>IA Fiscal</h1>
+            <p>Paiement automatique de TVA directement à l'État</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="connexion">
+            <h2>Connexion Sécurisée</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="siret">Numéro SIRET</label>
+                    <input type="text" id="siret" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Se connecter</button>
+            </form>
+        </section>
+
+        <section id="dashboard" class="hidden">
+            <h2>Tableau de Bord TVA</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>TVA Due</h3>
+                    <p id="tvaDue">0 €</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Prochain Paiement</h3>
+                    <p id="nextPayment">15/11/2023</p>
+                </div>
+            </div>
+
+            <div class="ai-section">
+                <h3>Assistant IA Fiscal</h3>
+                <div class="ai-message">
+                    <p>Je traite automatiquement vos déclarations de TVA et effectue les paiements directement à l'État.</p>
+                </div>
+                <button id="payNow" class="primary">Payer maintenant</button>
+            </div>
+
+            <div class="history">
+                <h3>Historique des Paiements</h3>
+                <table id="paymentHistory">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Montant</th>
+                            <th>Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rempli dynamiquement -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Service certifié par le Ministère des Finances</p>
+            <p>© 2023 IA Fiscal - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
